@@ -15,6 +15,13 @@ internal class Program
         sky.AddAnimalInEnvironment(jeff);
 
         sky.CheckAnimalsInEnvironment();
+
+        HuntingGround hunting = new HuntingGround();
+        hunting.AddAnimalInEnvironment(betty);
+        hunting.AddAnimalInEnvironment(fluffy);
+        hunting.AddAnimalInEnvironment(penny);
+
+        hunting.CheckAnimalsInEnvironment();
     }
 }
 

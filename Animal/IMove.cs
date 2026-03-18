@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace NCSafari
 {
-    internal interface Interface1
+    public interface IMove
     {
+        public void Move();
     }
 }

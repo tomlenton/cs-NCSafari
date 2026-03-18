@@ -26,11 +26,11 @@ namespace NCSafari
             {
                 if (Descending)
                 {
-                    return -1; // the heaviest animal comes earlier in the list as -1 means A comes before B
+                    return -1; // if the list is descending the heaviest animal comes earlier in the list as -1 means A comes before B
                 }
                 else
                 {
-                    return 1;  // the biggest animal goes last in the lost as 1 means A comes after B
+                    return 1;  // if the list as ascending the biggest animal goes last in the list as 1 means A comes after B
                 }
             }
             else if (A.WeightInKG < B.WeightInKG)

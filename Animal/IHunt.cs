@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace NCSafari
 {
-    internal interface IHunt
+    public interface IHunt
     {
+        public void Hunt();
+ 
     }
 }

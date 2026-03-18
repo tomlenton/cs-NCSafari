@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace NCSafari
 {
-    internal interface ISwim
+    public interface ISwim
     {
+        public void Swim();
+
     }
 }

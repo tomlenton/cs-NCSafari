@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace NCSafari
 {
-    public class Penguin : Bird, IMove
+    public class Penguin : Bird, IHunt, ISwim
     {
         public Penguin(float weightInKG) : base(weightInKG) { }
-        public void Move()
+        public void Hunt()
         {
-            Console.WriteLine("Penguin is moving!");
+            Console.WriteLine(this.GetType().Name + " is hunting in the water!");
+        }
+        public void Swim() {
+            Console.WriteLine(this.GetType().Name + " is swimming!");
         }
         public override void MakeSound()
         {

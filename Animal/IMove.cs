@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NCSafari
 {
-    [Obsolete("IMove has been replaced by specific interfaces instead")]
+    [Obsolete("IMove has been replaced by specific interfaces instead. Please use IFly, IHunt or ISwim instead.")]
     public interface IMove
     {
         public void Move();

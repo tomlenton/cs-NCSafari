@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace NCSafari
 {
-    public class Tiger : PantheraBigCat, IMove
+    public class Tiger : PantheraBigCat, IHunt
     {
         public Tiger(float weightInKG) : base(weightInKG) { }
-        public void Move()
+        public void Hunt()
         {
-            Console.WriteLine("Tiger is moving!");
+            Console.WriteLine(this.GetType().Name + " is hunting on land!");
         }
     }
 }

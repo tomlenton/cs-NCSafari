@@ -1,32 +1,20 @@
 ﻿namespace NCSafariZOO;
-    using NCSafari;
+using NCSafari;
 
-    internal class Program
-    {
+internal class Program
+{
     public static void Main()
     {
-        Tiger fluffy = new Tiger(70.5f);
-        Penguin penny = new Penguin(21);
-        Goose jeff = new Goose(5.5f);
+        Tiger fluffy = new Tiger(80);
+        Penguin penny = new Penguin(20.4f);
+        Goose jeff = new Goose(3);
         Bat betty = new Bat(0.7f);
 
-        List<Animals> animals = new List<Animals>()
-    { fluffy, penny, jeff, betty };
+        Sky sky = new Sky();
+        sky.AddAnimalInEnvironment(betty);
+        sky.AddAnimalInEnvironment(jeff);
 
-        foreach (Animals animal in animals)
-        {
-            if (animal is IFly flyingAnimal)
-            {
-                flyingAnimal.Fly();
-            }
-            if (animal is IHunt huntingAnimal)
-            {
-                huntingAnimal.Hunt();
-            }
-            if (animal is ISwim swimmingAnimal)
-            {
-                swimmingAnimal.Swim();
-            }
-        }
+        sky.CheckAnimalsInEnvironment();
     }
 }
+
